@@ -1,0 +1,36 @@
+Class
+Class in C++ are blue-prints representing groups of objects
+Main aim for OOP is to bind data and functions that operate on them
+so that no other part of code can access except that function.
+
+
+When a class is defined, no memory is allocated but when it is instantied(aka object is created)  then the memory is allocated.
+
+
+THE FOUR BASIC PRINCIPLES OF OBJECT ORIENTED PROGRAMMING
+Encapsulation: Wrapping up data and information under a single unit.
+It alsoe leads to data abstraction or hiding.
+
+Abstraction: it is one of the most essential and important features of
+OOP in c++. Displaing only essential information and hiding the details.
+
+Polymorphism: Means having many forms. Example A person can have more than
+one characteristics, like a man is a father, a husband, an employee. 
+
+
+Inheritance: Capability of a class to derive properties and characteristics
+from another class. Inheritance is one of the most important in OOP
+
+	* Sub class:    a class that inherits properties from another class is 
+			        called a subclass or derived class.
+	* Super class:  The class whose properties are inherited by a sub class 
+					is called a Base class or Super class.
+	* Reusability:  Inheritance supports the concept of reusuability.
+	
+	Example the Animal Class(Super class) are split into 3 sub class
+	Dog Class, Cat Class, Cow Class.
+	
+
+
+
+// at the end of this write a code for all of the OOP methods mentioned!

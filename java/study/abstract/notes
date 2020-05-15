@@ -1,0 +1,29 @@
+Our goal here is to make the base class GameObject Abstract.
+Abstract classes exist to be extended. They cannot be instantiated.
+Allows a  way to represent an Abstract object.
+
+What is the benefit of abstract class?
+
+The abstract methods is going to exist in this object, not going to provide the 
+implementation. Implementation will be applied through the object.
+
+it allows to use abstract method. Why is that neccessary important?
+We can use the abstract class name to create objects from other classes.
+
+
+Cons Type of variable dictates the type of objec
+
+Abtract method are empty and does not do anything when you call it. Literally that is why
+it is abstract. However when initiating the method after extending it in the class, you
+can implement the method.
+
+
+
+INTERFACE assumes all methods are abstract.
+
+An abstract class uses abstract classes and methods that are implemented.
+
+
+extending means adding onto the methods that already exists.
+
+

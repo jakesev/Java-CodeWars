@@ -1,0 +1,22 @@
+public class findoutlier{
+	static int find(int[] integers){
+	int[] outlierFinder = new int[3];
+
+	for(int i = 0; i<integers.length; i++){
+		if(integers[i]%2 == 0){
+			outlierFinder[0] += 1; 
+		} else{
+			outlierFinder[1] += 1;
+		}
+		if(outlierFinder[0] < outlierFinder[1]){
+			outlierFinder[2] = integers[i];
+		} else {
+			outlierFinder[2] = integers[i];
+		}
+	}
+
+
+	return outlierFinder[2];
+
+	}
+}

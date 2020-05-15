@@ -1,0 +1,69 @@
+<?php
+    include_once 'in/db.php'; 
+?>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+ 
+    <title>Jake's Car Gallery</title>
+    <script defer src="js/db_connection.js"></script>
+
+</head>
+<body>
+
+
+    <header>
+        <a href="register.php"><img class ="logo" src="img/logo2.png" alt="logo"> </a>
+        <nav>
+            <ul class = "nav_bar">
+                <li><a href="#">Cars For Sale</a></li>
+                <li><a href="#">Sell My Car</a></li>
+                <li><a href="#">Contact Us</a></li>
+           </ul>
+        </nav>
+        <div class="form__username">
+            <input type="text" class="user__input" name="username" id="username" placeholder="Username"  />
+            <label for="name" class="user__label">User Name</label>
+        </div>
+        <div class="form__password">
+            <input type="password" class="pass__input" name="password" id="password" placeholder="Password"  />
+            <label for="name" class="pass__label">Password</label>
+        </div>
+        <a class ="cta" href="#"><button id="login">Login</button></a> 
+        <a class ="cta" href="#"><button id="join">Join</button></a>    
+   
+    </header>
+
+    <form id="registration" action='register.php' method="POST" >
+
+    <div class="signup">
+        <h1>Register Below</h1>
+        <div class="registration">
+            <input type="text" class="user__input" id="registerUsername" name="registerUsername" placeholder="Username"  />
+            <label for="name" class="user__label">User Name</label>
+
+            <input type="password" class="pass__input" id="registerPassword" name="registerPassword" placeholder="Password"  />
+            <label for="name" class="pass__label">Password</label>
+            
+            <input type="password" class="pass__input" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"  />
+            <label for="name" class="pass__label">Password</label>
+
+            <div class="gender">
+                <input type="radio" name="sex" id="male" value="male" data-icon=''/>
+                <input type="radio" name="sex" id="female" value="female" data-icon='' />
+            </div>
+
+
+            <a class ="cta" href="#"><button type ="submit">Sign Up</button></a> 
+
+    </div>
+
+
+</form>
+
+</body>
+</html>

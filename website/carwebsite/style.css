@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body,html{
+    background-color: white;
+    height: 100%;
+    background-image: url("img/car1.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+li, a, button{
+    font-weight: 500;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1%;
+    background-color: #24252A;
+}
+
+.logo{
+    cursor: pointer;
+    width: 140px;
+    height: 110px;
+}
+
+.nav_bar{
+    list-style: none;
+}
+
+.nav_bar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_bar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_bar li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 15px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    margin-top: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+.user_login{
+    list-style: none;
+}
+
+.user_login li{
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+
+.user__label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 230;
+    margin-top: auto;
+    
+    transition: all 0.3s;
+    transform: translateY(0rem);
+    color: white;
+    display: block;
+
+  }
+  
+  .user__input {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin-top:25px;
+    margin-left: 200;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 70%;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    border: 3px solid #0088A9;
+
+  }
+  
+  .pass__label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 35;
+    margin-top: auto;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+    color: white;
+    display: block;
+    
+
+  }
+  
+  .pass__input {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top:25px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 110%;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    border: 3px solid #0088A9;
+
+  }
+  
+  .user__input:placeholder-shown + .user__label,
+  .pass__input:placeholder-shown + .pass__label
+   {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+  
+  .search__car{
+      margin: auto;
+      margin-top: 100;
+      width: 50%;
+      border: 3px solid #0088A9;
+      padding: 100;
+      background-color: rgba(36, 37, 42, 0.8);
+  }
+
+
+.search__car h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 100;
+}
+
+
+.select__make,
+.select__model,
+.min__price,
+.max__price{
+    position: relative;
+    width: 200px;
+    margin-left: 140;
+    margin-bottom: 50;    
+}
+
+.max__price,
+.min__price{
+    margin-bottom: 70;
+    
+}
+
+.select__make select,
+.select__model select,
+.min__price select,
+.max__price select {
+  display: none; /*hide original SELECT element:*/
+  
+}
+
+.select-selected {
+    background-color: rgba(0, 136, 169, 1);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+    background-color: rgba(0, 136, 169, 1);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.select__make, .select__model{
+    display: inline-block;
+}
+
+.min__price, .max__price{
+    display: inline-block;
+}
+
+.search__button button{
+    margin-left: 570;
+}
+
+.signup{
+    margin: auto;
+    margin-top: 100;
+    width: 50%;
+    border: 3px solid #0088A9;
+    padding: 100;
+    background-color: rgba(36, 37, 42, 0.8);
+
+}
+
+.signup h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 80;
+}
+.signup .registration .user__input,
+.signup .registration .pass__input,
+.signup .registration .pass__input
+{
+    width: 270px;
+    margin: auto;
+    width: 55%;
+    border: 3px solid #0088A9;
+    padding: 15px;
+    margin-left: 25%;
+}
+
+.signup .registration .user__label,
+.signup .registration .pass__label{
+    margin-bottom: 30;
+}
+
+.signup .registration .pass__label{
+    margin-left: 230;
+}
+
+.signup .cta{
+    margin-left:65%;
+}
+
+.gender{
+    display: border-;
+    margin: auto; 
+    background-color: rgba(118, 119, 122, 1);
+    border-radius: 50px;
+    float: right;
+    margin-right: 300;
+}
+
+
+
+input[name='sex'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  input[name='sex']:after {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    text-align: center;
+    font-size: 80px;
+    content: attr(data-icon);
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: box-shadow 1s, color 1s;
+    transition: box-shadow 1s, color 1s;
+  }
+  input[name='sex']:checked:after {
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.4);
+    color: rgba(48, 199, 34, 0.6);
+  }
