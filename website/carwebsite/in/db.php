@@ -8,9 +8,4 @@ $dbName = "jake_car_website";
 $con = mysqli_connect($dbServerName,$dbusername,$dbPassword,$dbName);
 
 
-
-
-
-
-
 ?>
